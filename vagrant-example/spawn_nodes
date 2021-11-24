@@ -1,0 +1,5 @@
+#! /bin/bash
+
+for p in 5100 5101 5102 5103 50104; do
+  docker run -p $p:22 -ti dev-image
+done

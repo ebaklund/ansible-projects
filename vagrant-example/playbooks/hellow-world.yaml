@@ -1,0 +1,11 @@
+---
+- name: This is a hello-world example
+  hosts: "*"
+  strategy: free
+  become: true
+  tasks:
+    - name: Ensure vim is installed.
+      yum:
+        name: vim
+        state: latest
+
